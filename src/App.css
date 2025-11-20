@@ -838,8 +838,8 @@
 }
 
 .course-badge {
-  background: #ffe799;
-  color: #593d00;
+  background: #c2e9eb;
+  color: #0d5261;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
@@ -853,6 +853,27 @@
   font-weight: 600;
   margin-bottom: 8px;
   color: #1c1d1f;
+}
+
+.course-image {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 12px;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
 .instructor {

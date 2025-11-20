@@ -96,8 +96,9 @@ export const featuredCourses = {
       badge: "Bestseller",
       rating: 4.6,
       reviews: 10801,
-      price: "EE349.99",
-      originalPrice: ""
+      price: "EG309.99",
+      originalPrice: "",
+      image: "/images/img1.png"
     },
     {
       id: 2,
@@ -106,8 +107,9 @@ export const featuredCourses = {
       badge: "Bestseller",
       rating: 4.4,
       reviews: 950,
-      price: "EE349.99",
-      originalPrice: ""
+      price: "EG309.99",
+      originalPrice: "",
+      image: "/images/img2.png"
     },
     {
       id: 3,
@@ -116,8 +118,9 @@ export const featuredCourses = {
       badge: "Highest Rated",
       rating: 3.0,
       reviews: 21,
-      price: "EE349.99",
-      originalPrice: ""
+      price: "EG579.99",
+      originalPrice: "",
+      image: "/images/img3.png"
     },
     {
       id: 4,
@@ -126,8 +129,9 @@ export const featuredCourses = {
       badge: "Not a New",
       rating: 4.8,
       reviews: 74,
-      price: "EE349.99",
-      originalPrice: ""
+      price: "EG309.99",
+      originalPrice: "",
+      image: "/images/img4.png"
     }
   ]
 };

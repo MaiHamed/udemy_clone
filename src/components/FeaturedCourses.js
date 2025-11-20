@@ -16,6 +16,9 @@ function FeaturedCourses({ data }) {
         <div className="courses-grid">
           {data.courses.map(course => (
             <div key={course.id} className="course-card">
+              <div className="course-image">
+                <img src={course.image} alt={course.title} />
+              </div>
               <div className="course-badge">{course.badge}</div>
               <h3 className="course-title">{course.title}</h3>
               <p className="instructor">{course.instructor}</p>

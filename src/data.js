@@ -57,26 +57,26 @@ export const personalPlan = {
     { 
       id: 1, 
       text: "Learn AI and more", 
-      icon: "sparkles",
-      bgColor: "var(--color-purple-150)" 
+      icon: "/images/icon-stars.svg",
+      bgColor: "#cec0fc"
     },
     { 
       id: 2, 
       text: "Prep for a certification", 
-      icon: "trophy",
-      bgColor: "var(--color-green-150)" 
+      icon: "/images/icon-trophy.svg",
+      bgColor: "#b0e3c6" 
     },
     { 
       id: 3, 
       text: "Practice with AI coaching", 
-      icon: "question-answer-outline",
-      bgColor: "var(--color-orange-150)" 
+      icon: "/images/icon-question-answer-outline.svg",
+      bgColor: "#f7c57e" 
     },
     { 
       id: 4, 
       text: "Advance your career", 
-      icon: "lightbulb",
-      bgColor: "var(--color-teal-150)" 
+      icon: "/images/icon-lightbulb.svg",
+      bgColor: "#85d7f3"
     }
   ],
   price: "Starting at EE204.00/month",

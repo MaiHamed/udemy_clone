@@ -637,23 +637,18 @@
   flex-shrink: 0;
 }
 
-.feature-icon svg {
+.feature-svg {
   width: 16px;
   height: 16px;
-  color: #1c1d1f;
 }
 
-.ud-icon-color-neutral {
-  color: #1c1d1f;
-}
-
-.ud-text-md {
+.feature-text {
   font-size: 16px;
   color: #ffffff;
   line-height: 1.4;
 }
 
-.ud-text-md strong {
+.feature-text strong {
   font-weight: 700;
 }
 
@@ -687,107 +682,8 @@
   color: #ffffff; 
   font-size: 16px;
   margin: 0;
-  opacity: 0.9;
 }
 
-
-.plan-footer .price {
-  color: #ffffff !important;
-  opacity: 1;
-}
-
-
-:root {
-  --color-purple-150: #cec0fc;
-  --color-green-150: #b0e3c6;
-  --color-orange-150: #f7c57e;
-  --color-teal-150: #85d7f3;
-}
-
-/* Responsive Design */
-@media (max-width: 968px) {
-  .personal-plan-card {
-    padding: 40px;
-  }
-  
-  .personal-plan-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px;
-  }
-  
-  .personal-plan-text {
-    text-align: center;
-    max-width: 100%;
-  }
-  
-  .features-list {
-    align-items: center;
-  }
-  
-  .plan-footer {
-    align-items: center;
-  }
-  
-  .personal-plan-image {
-    justify-content: center;
-  }
-  
-  .personal-plan-image img {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 768px) {
-  .personal-plan {
-    padding: 60px 20px;
-  }
-  
-  .personal-plan-card {
-    padding: 30px 20px;
-  }
-  
-  .personal-plan h2 {
-    font-size: 28px;
-  }
-  
-  .personal-plan .description {
-    font-size: 16px;
-  }
-  
-  .personal-plan-image img {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .personal-plan-card {
-    padding: 25px 15px;
-  }
-  
-  .personal-plan h2 {
-    font-size: 24px;
-  }
-  
-  .learn-more-btn {
-    padding: 12px 24px;
-    font-size: 14px;
-  }
-  
-  .feature-item {
-    gap: 10px;
-  }
-  
-  .feature-icon {
-    width: 28px;
-    height: 28px;
-  }
-  
-  .feature-icon svg {
-    width: 14px;
-    height: 14px;
-  }
-}
 
 /* Featured Courses Section */
 .featured-courses {

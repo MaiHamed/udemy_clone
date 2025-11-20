@@ -11,7 +11,7 @@
 
 /* Top Offer Banner */
 .offer-banner-top {
-  background: #1c1d1f;
+  background: #c2e9eb;
   color: white;
   padding: 12px 0;
   text-align: center;
@@ -26,7 +26,7 @@
 }
 
 .offer-text {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* Navbar Styles */
@@ -37,11 +37,14 @@
   border-bottom: 1px solid #ddd;
   align-items: center;
   background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar .left {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -49,30 +52,40 @@
   color: #5624d0;
   font-size: 24px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .explore {
   color: #5624d0;
   font-weight: 500;
   cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .search-container {
   position: relative;
+  flex: 1;
+  max-width: 500px;
 }
 
 .search {
-  padding: 12px 45px 12px 16px;
-  width: 400px;
-  border-radius: 30px;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 9999px;
   border: 1px solid #1c1d1f;
   background: #f7f9fa;
   font-size: 14px;
 }
 
+.search:focus {
+  outline: none;
+  border-color: #5624d0;
+}
+
 .navbar .right {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -81,10 +94,29 @@
   color: #1c1d1f;
   font-weight: 500;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
   color: #5624d0;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.nav-icon:hover {
+  opacity: 1;
 }
 
 .login {
@@ -92,9 +124,16 @@
   background: white;
   color: #1c1d1f;
   border: 1px solid #1c1d1f;
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.login:hover {
+  background: #f7f9fa;
 }
 
 .signup {
@@ -102,10 +141,65 @@
   background: #1c1d1f;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
 }
+
+.signup:hover {
+  background: #2d2f31;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .search-container {
+    max-width: 300px;
+  }
+  
+  .navbar .right {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .navbar .left {
+    order: 1;
+    flex: 1;
+  }
+  
+  .navbar .right {
+    order: 2;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .search-container {
+    max-width: 100%;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .login, .signup {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+
 /* Hero Section */
 .hero {
   background: #f7f9fa;

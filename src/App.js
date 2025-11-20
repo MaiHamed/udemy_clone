@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar.js";
+import Offer from "./components/Offer.js";
 import Hero from "./components/Hero.js";
 import EssentialSkills from "./components/EssentialSkills.js";
 import PersonalPlan from "./components/PesronalPlan.js";
@@ -9,7 +10,6 @@ import Trusted from "./components/Trusted.js";
 import {
   navLinks,
   heroData,
-  categories,
   essentialSkills,
   personalPlan,
   featuredCourses,
@@ -21,6 +21,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <Offer />
       <Navbar navLinks={navLinks} />
       <Hero data={heroData} />
       <EssentialSkills data={essentialSkills} />

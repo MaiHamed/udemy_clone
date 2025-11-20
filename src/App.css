@@ -9,6 +9,26 @@
   min-height: 100vh;
 }
 
+/* Top Offer Banner */
+.offer-banner-top {
+  background: #1c1d1f;
+  color: white;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.offer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.offer-text {
+  color: white;
+}
+
 /* Navbar Styles */
 .navbar {
   display: flex;

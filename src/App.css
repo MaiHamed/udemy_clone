@@ -30,6 +30,7 @@
 }
 
 /* Navbar Styles */
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -46,6 +47,7 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  flex: 1;
 }
 
 .logo {
@@ -53,6 +55,7 @@
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .explore {
@@ -61,12 +64,14 @@
   cursor: pointer;
   font-size: 14px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .search-container {
   position: relative;
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
+  min-width: 200px;
 }
 
 .search {
@@ -87,6 +92,7 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-link {
@@ -160,7 +166,7 @@
   }
   
   .search-container {
-    max-width: 300px;
+    max-width: 400px;
   }
   
   .navbar .right {
@@ -177,6 +183,7 @@
   .navbar .left {
     order: 1;
     flex: 1;
+    flex-wrap: wrap;
   }
   
   .navbar .right {
@@ -187,6 +194,7 @@
   
   .search-container {
     max-width: 100%;
+    min-width: 150px;
   }
   
   .nav-link {
